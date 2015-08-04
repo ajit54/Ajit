@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name= "compile and run JAVA class">
+   <target name="run" depends="compile">
+   	<java classname ="com.demo.Demo">
+   	   		<classpath path ="Priyademo"/>
+   	   </java>
+</target>
+    <target name= "compile">
+<javac includeantruntime ="false" srcdir="./src" destdir="Priyademo"/>
+
+</target>
+
+</project>
